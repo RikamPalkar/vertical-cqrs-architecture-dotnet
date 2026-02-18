@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>TodoApi</RootNamespace>
+    <AssemblyName>TodoApi</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- MediatR: Mediator pattern for CQRS (sends commands/queries to handlers) -->
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <!-- FluentValidation: Optional but useful for validating commands -->
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
+    <!-- Entity Framework Core with InMemory provider (no real DB needed) -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.11" />
+  </ItemGroup>
+
+</Project>
